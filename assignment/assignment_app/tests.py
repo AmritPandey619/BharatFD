@@ -19,5 +19,5 @@ async def test_faq_api(client):
 @pytest.mark.django_db
 async def test_faq_translation():
     faq = FAQ.objects.create(question="What is Machine Learning?", answer="A subset of AI")
-    translation = await faq.get_translation("hi")  # Use await for async calls
+    translation = await faq.get_translation("hi") 
     assert "मशीन लर्निंग" in translation["question"]
