@@ -7,6 +7,9 @@ from googletrans import Translator
 class FAQ(models.Model):
     question = models.TextField()
     answer = RichTextField(blank=True)  # WYSIWYG editor support
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    slug = models.SlugField(unique=True, blank=True)
 
     def get_translation(self, lang):
         """Retrieve cached translation or translate dynamically."""
