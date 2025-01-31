@@ -109,3 +109,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 8. **License**: A mention of the project license.
 
 ---
+
+## Screenshots
+
+### Admin Panel
+![Admin Panel](images/Screenshot1.png)
+
+### FAQ Page
+![FAQ Page](images/Screenshot2.png)
